@@ -1,30 +1,108 @@
 .container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .principal {
-    width: 100%;
-    height: 70%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    min-height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Configurações da section */
-.secao {
+.artigo, .container-formulario {
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* max-height: 100%;
-    max-width: 100%; */
 }
 
-/* Fim da section */
+.titulo-artigo {
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+    color: var(--corFontPadraoVermelha);
+}
+
+.img-artigo {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-artigo > img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+}
+
+.texto-propaganda {
+    width: 100%;
+    height: 50%;
+    
+}
+
+.texto-propaganda > h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--corFontPadraoVermelha);
+}
+.texto-propaganda > p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.1em;
+    padding: 15px;
+}
 
 /* Configurações do form */
 
 /* Fim do form */
 
 /* Configurações do footer */
+
+.roda-pe {
+    width: 100%;
+    min-height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: var(--bgHeadarPadrao);
+}
+
+.criador, .links  {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criador > p {
+    margin-top: 10px;
+}
+
+.criador > p > strong {
+    color: var(--corFontPadraoVermelha);
+}
+.links > ol {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links > ol > a {
+    font-size: 1.3em;
+    color: var(--corFontPadraoAzul);
+}
