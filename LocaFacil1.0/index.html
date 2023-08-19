@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loca Facíl</title>
+    <!-- Importes -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <!-- Configurações Mobile -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="/css/menuMobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="/css/corpo.css">
+    <!-- Configurações DesckTop -->
+    <!-- <link rel="stylesheet" media="screen and (min-width: 951px)" href="/css/descktop/header.css">
+    <link rel="stylesheet" media="screen and (min-width: 951px)" href="/css/descktop/corpo.css">
+ -->
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalhio">
+            <div class="textoLogo">
+                <h1 class="logo">Loca<span class="subLogo">Facíl</span></h1>
+                <p>Á locadora de Veicúlo dos Devs</p>
+            </div>
+            <div class="iconsMenu">
+                <span class="material-icons" id="abrir">menu</span>
+                <span class="material-icons" id="fechar">close</span>
+            </div>
+            <nav class="menu" id="menuMobile">
+                <ul class="menuItens">
+                    <li><a href="#">Veicúlos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="principal">
+            <article class="artigo">
+                <h2 class="titulo-artigo">Texto esplicativo</h2>
+                <div class="img-artigo">
+                    <img src="/imagens/carro-vermelho.jpg" alt="imagem de carro">
+                </div>
+                <div class="texto-propaganda">
+                    <h3>Este é um dos nossos modelos !</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero nobis ipsam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero nobis ipsam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero nobis ipsam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero nobis ipsam.
+                    </p>
+                </div>
+            </article>
+            <div class="container-formulario">
+                <h3 class="titulo-form">Cadastre-se</h3>
+                <form class="formulario" method="post">
+                    <div class="box-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required>
+                    </div>
+                    <div class="box-form">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" required>
+                    </div>
+                    <div class="box-form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required>
+                    </div>
+                    <div class="box-form">
+                        <input type="submit" value="Enviar" class="btnEnviar" id="enviar" required>
+                        <p><a href="#">Esqueceu sua senha?</a></p>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="roda-pe">
+            <div class="criador">
+                <p>&copysr; Desenvolvido por <strong>David Edson</strong>.</p>
+            </div>
+            <div class="links">
+                <ol>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">e-mail</a></li>
+                </ol>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

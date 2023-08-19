@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --bgHeadarPadrao: linear-gradient(to right, #0000099c, #2200005d, #0000099c);
+    --bgParaoNav: linear-gradient(to right, #0000007c, #2200001e, #0000007c);
+    --bgFormPadrao: linear-gradient(to left, #6a29777c, #3310361e, #812f7d7c);
+    --bgBtnPadraoVerde: linear-gradient(to left, #589b4b7c, #4ac54a70, #2f813a3b);
+    --bgBtnPadraoLaranja: linear-gradient(to left, #926b3e63, #ec9748b4, #8b510f48);
+    --bgFormulario: : linear-gradient(165deg, #7b61ba 0, #594b95 25%, #38346f 50%, #1b1e4a 75%, #05062a 100%);
+
+    --corFontPadraoVermelha: #f33; 
+    --corFontPadraoAmarela: #ffae;
+    --corFontPadraoAzul: #33f;
+}
