@@ -26,7 +26,7 @@ html, body {
     --bgFormPadrao: linear-gradient(to left, #6a29777c, #3310361e, #812f7d7c);
     --bgBtnPadraoVerde: linear-gradient(to left, #589b4b7c, #4ac54a70, #2f813a3b);
     --bgBtnPadraoLaranja: linear-gradient(to left, #926b3e63, #ec9748b4, #8b510f48);
-    --bgFormulario: : linear-gradient(165deg, #7b61ba 0, #594b95 25%, #38346f 50%, #1b1e4a 75%, #05062a 100%);
+    --bgFormulario: linear-gradient(165deg, #7b61ba 0, #594b95 25%, #38346f 50%, #1b1e4a 75%, #05062a 100%);
 
     --corFontPadraoVermelha: #f33; 
     --corFontPadraoAmarela: #ffae;

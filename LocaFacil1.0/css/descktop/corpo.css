@@ -1,19 +1,20 @@
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 .principal {
     max-width: 100%;
-    min-height: 70%;
+    max-height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Configurações do ( Formúlario e article ). */
 .artigo, .container-formulario {
     width: 50%;
     height: 100%;
@@ -23,86 +24,145 @@
     flex-direction: column;
 }
 
+/* Configurações individual do ( article ), e dos seus itens. */
+.artigo {
+    padding: .5rem;
+}
+
 .titulo-artigo {
     width: 100%;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.4em;
     color: var(--corFontPadraoVermelha);
 }
 
 .img-artigo {
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-artigo > img {
     max-width: 100%;
-    max-height: 100%;
-    border-radius: 12px;
+    max-height: 40%;
+    margin: 10px 0;
+}
+.img-artigo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .texto-propaganda {
-    width: 100%;
-    height: 50%;
-    
+    max-width: 100%;
+    max-height: 40%;
+    margin: 10px 0;
 }
 
 .texto-propaganda > h3 {
+    width: 100%;
+    max-height: 20%;
     text-align: center;
+    margin-bottom: 20px;
     font-size: 2em;
     color: var(--corFontPadraoVermelha);
 }
-.texto-propaganda > p {
-    text-align: justify;
-    line-height: 1.5;
-    font-size: 1.1em;
-    padding: 15px;
+
+.texto-propaganda  > p {
+    width: 100%;
+    max-height: 80%;
+    line-height: 1.4;
+    font-size: 1.2em;
+    color: #000000a9;
 }
 
-/* Configurações do form */
+/* Configurações individual do form e seus itens */
 
-/* Fim do form */
+.container-formulario {
+    background-image: var(--bgFormulario);
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+.titulo-form {
+    font-size: 2.8em;
+    color: #f0f8ff;
+    font-family: monospace;
+}
+
+.formulario {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 2rem;
+}
+
+.box-form > input {
+    width: 50%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px var(--corFontPadraoVermelha);
+    padding: .3rem;
+}
+
+.box-form > label {
+    font-size: 1.2em;
+    color: #f0f8ff;
+}
+
+.btn {
+    width: 50%;
+    flex-direction: column;
+}
+
+.btn > .btnEnviar {
+    background-image: var(--bgBtnPadraoVerde);
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--corFontPadraoVermelha) !important;
+    box-shadow: 2px 2px 4px #f0ff09 !important;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.btn > .btnEnviar:hover {
+    font-size: 1.2em;
+    box-shadow: 2px 4px 4px #adff2f !important;
+    transition: .5s ease-in;
+}
+
+.btn > p, a {
+    font-size: 1.1em;
+    color: var(--corFontPadraoAzul);
+}
 
 /* Configurações do footer */
 
 .roda-pe {
     width: 100%;
-    min-height: 10%;
+    height: 20%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-image: var(--bgHeadarPadrao);
 }
 
-.criador, .links  {
-    width: 100%;
-    height: 50%;
+.criador, .links, ol {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .criador > p {
-    margin-top: 10px;
+    padding: 10px;
 }
 
-.criador > p > strong {
-    color: var(--corFontPadraoVermelha);
-}
-.links > ol {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.links > ol > a {
-    font-size: 1.3em;
-    color: var(--corFontPadraoAzul);
+.links > ol > li, a {
+    padding: 10px;
 }
